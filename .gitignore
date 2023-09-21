@@ -151,3 +151,7 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 build-and-run.bat
+datatest/shortLink.bak
+datatest/shortLink.bak
+datatest/shortLink.dat
+datatest/shortLink.dir

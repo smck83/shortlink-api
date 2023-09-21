@@ -4,7 +4,7 @@ import random
 dbName = "data/shortLink"
 uppercase_letters = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 def keyExists(key):
-    with dbm.open(dbName, 'r') as db:
+    with dbm.open(dbName, 'c') as db:
         if key in db:
             return True
         else:
@@ -20,9 +20,10 @@ def keyGen(length:int=5):
 
 def genUniqueKey(length:int=5):
     key = keyGen(length)
-    while keyExists(key) == True:
-        print(key)
+    print(key)
+    while keyExists(key) == True:     
         key = keyGen(length)
+        print(key)
     return key
         
 def addKey(key,url):
@@ -48,3 +49,4 @@ def createURL(url,customkey:str=False,length:int=5):
         return(output)
 
 
+#print(genUniqueKey(1))
