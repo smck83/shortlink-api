@@ -19,4 +19,5 @@ Response:
     
 # visit url
 
-    https://localhost:8000/xYzsD
+    https://localhost:8000/2N78N or https://example.com/2N78N
+    
