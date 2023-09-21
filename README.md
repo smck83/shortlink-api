@@ -10,3 +10,6 @@ FastAPI using dbm for URL shortener service
     https://localhost:8000/createShortURL?url=https://www.longurl.example.com
 
     
+# visit url
+
+    https://localhost:8000/xYzsD
