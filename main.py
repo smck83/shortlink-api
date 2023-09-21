@@ -22,10 +22,14 @@ def shortURL(url: str,key = False,length:int = 5):
 
 @app.get("/{key}", response_class=RedirectResponse, status_code=302)
 async def redirect_short2Long(key):
-    if key!= None and shortlink.keyExists(key) == True:
-        return shortlink.getURL(key)
+    if key != None and shortlink.keyExists(key) == True:
+        outputURL = shortlink.getURL(key)
+        if "http" in outputURL:
+            return outputURL
+        else:
+            return "https://github.com/smck83/shortlink-api"
     else:
-        return {"error": f"unknown key {key}"}
+        return "https://github.com/smck83/shortlink-api"
 
 
 
