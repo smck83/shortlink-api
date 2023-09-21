@@ -13,7 +13,7 @@ Response:
 
     {
       "url": "https://example.com/2N78N",
-      "longURL": "https://github.com/smck83"
+      "longURL": "https://www.longurl.example.com"
     }
 
     
